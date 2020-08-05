@@ -17,15 +17,15 @@ class Solution(object):
         """
         counter = 0
         ans = 0
-        for num in nums:
+        for num in nums:    #for i in nums also can
             if num == 1:
                 counter =+ 1
-                ans = max(ans,counter)
             else:
-            counter = 0
+             ans = max(ans,counter) #better name could be global and local counter & put it here so you only compare if u counter a zero! save time
+             counter = 0
         return ans
 
 '''
-sorted it out for this array, incomplete tho I still dont fully understand and the edit is thru trial and error.
+sorted it out for this array
 incomplete
 '''
