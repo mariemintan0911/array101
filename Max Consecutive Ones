@@ -1,0 +1,38 @@
+"""
+Max Consecutive Ones
+In array 101, example 1
+Given a binary array, find the maximum number of consecutive 1s in this array.
+thought process:
+1. its oop
+2. need find a way to tell it starts counting
+3. need find a way to store the 'max' number of 1, until there is a new set of consecutive 1s thats >
+4.find a way to replace in 3
+5.when to stop
+"""
+class Solution(object):
+    def findMaxConsecutiveOnes(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        counter = 0
+        ans = 0
+        for num in nums:
+            if num == 1:
+                counter =+ 1
+            else:
+                ans = max(ans,counter)
+                counter = 0
+                return ans
+        ans = max(ans,counter)
+        return ans
+    
+
+input = [1,1,0,1,1,1]
+print(input.ans)
+# I am honestly not sure how to call and use this oop method heh
+
+'''
+sorted it out for this array, incomplete if array is not this and is other binary strings.
+incomplete
+'''
