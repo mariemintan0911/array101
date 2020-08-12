@@ -1,0 +1,21 @@
+'''
+initially did this
+class Solution(object):
+    def findNumbers(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        even=[]
+        for i in nums:
+            if len(str(i)) % 2 == 0
+             even.append(i)
+                i =+1
+            else:
+                i =+1
+print(len(even))
+
+found below's one liner
+'''
+def findNumbers(self, nums: List[int]) -> int:
+        return sum(len([i for i in nums if len(str(i)) % 2 == 0]))
